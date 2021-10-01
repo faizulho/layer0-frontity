@@ -10,5 +10,7 @@ module.exports = function () {
 
     // Once your app's console output has matched all of the following patterns, the "Layer0 ready on ..." message will be displayed
     ready: [/SERVER STARTED/i],
+    
+    filterOutput: line => !line.match(/some pattern/),
   });
 };
