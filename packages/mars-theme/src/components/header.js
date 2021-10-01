@@ -1,17 +1,9 @@
-import { useEffect } from 'react'
-import { install } from 'layer0/prefetch/window'
 import { connect, styled } from "frontity";
 import Link from "./link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
 
 const Header = ({ state }) => {
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      install()
-    }
-  },
-  
   return (
     <>
       <Container>
