@@ -1,4 +1,4 @@
 const { Router } = require('@layer0/core/router')
-const { nextRoutes } = require('@layer0/next')
+const { nextRoutes } = require('@layer0/frontity')
 
-module.exports = new Router().use(nextRoutes)
+module.exports = new Router().use(frontityRoutes)
