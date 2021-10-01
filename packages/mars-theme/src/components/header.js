@@ -10,7 +10,7 @@ const Header = ({ state }) => {
     if (process.env.NODE_ENV === 'production') {
       install()
     }
-  }, [])
+  },
   
   return (
     <>
